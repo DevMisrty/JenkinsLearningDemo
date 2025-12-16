@@ -21,4 +21,9 @@ public class BaseController {
     public String sayName(@PathVariable String name){
         return name;
     }
+
+    @GetMapping("/twice/{name}")
+    public String sayNameTwice(@PathVariable String name){
+        return name + " " + name;
+    }
 }

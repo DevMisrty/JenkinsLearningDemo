@@ -16,4 +16,9 @@ public class BaseController {
     public String sayHelloName(@PathVariable String name){
         return "Hello " +name;
     }
+
+    @GetMapping("/{name}")
+    public String sayName(@PathVariable String name){
+        return name;
+    }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DataModelController {
 
-    private DataModelRepo repo;
+    private final DataModelRepo repo;
 
     @PostMapping("/data")
     public DataModel addDataModel(@RequestBody DataModel data){
